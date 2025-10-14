@@ -1,0 +1,27 @@
+ *{
+    margin: 0;
+    padding: o;
+}
+
+p {
+    margin: 5px;
+    border :1px solid black;
+    padding: 10px;
+}
+
+
+.celdaGris {
+    background-color: grey;
+    color: red;
+}
+
+.celdaRoja{
+    background-color: red;
+    color: white;
+}
+
+.bordeNegro{
+border: 1px black;
+}
+
+.bordes {background-color: coral;}
