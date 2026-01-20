@@ -1,36 +1,26 @@
-body{
-font-family:Arial,Helvetica,sans-serif;
-margin:0;
-background:#f4f6f8;
-color:#333
+ *{
+    margin: 0;
+    padding: o;
 }
-header{
-background:#2c3e50;
-color:white;
-padding:20px;
-text-align:center
+
+p {
+    margin: 5px;
+    padding: 10px;
 }
-nav{
-background:#34495e;
-padding:10px;
-text-align:center
+
+
+.celdaGris {
+    background-color: grey;
+    color: red;
 }
-nav a{
-color:white;
-margin:0 10px;
-text-decoration:none;
-font-weight:bold
+
+.celdaRoja{
+    background-color: red;
+    color: white;
 }
-main{
-max-width:900px;
-margin:20px auto;
-background:white;
-padding:20px;
-border-radius:6px
+
+.bordeNegro{
+border: 1px black;
 }
-footer{
-text-align:center;
-padding:15px;
-background:#2c3e50;
-color:white
-}
+
+.bordes {background-color: coral;}
