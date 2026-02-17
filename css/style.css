@@ -1,87 +1,288 @@
 /* style.css */
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #34495e;
+  --accent-color: #e74c3c;
+  --text-color: #333;
+  --bg-color: #f4f6f8;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
-  background-color: #f4f6f8;
-  color: #333;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   line-height: 1.6;
 }
 
+/* Header */
 header {
-  background-color: #2c3e50;
-  color: #fff;
-  padding: 20px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 40px 20px;
   text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+/* Navigation - Tabs Style */
 nav {
-  background-color: #34495e;
-  padding: 10px;
-  text-align: center;
+  background-color: var(--secondary-color);
+  padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-nav a {
-  color: #fff;
-  margin: 0 10px;
+.nav-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nav-tab {
+  display: block;
+  color: var(--white);
   text-decoration: none;
-  font-weight: bold;
+  padding: 15px 25px;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+  font-weight: 500;
 }
 
-nav a:hover {
-  text-decoration: underline;
+.nav-tab:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: 3px solid var(--accent-color);
+  transform: translateY(-2px);
 }
 
+.login-tab {
+  margin-left: auto;
+  /* Push login to the right on large screens */
+  background-color: var(--accent-color);
+  border-bottom: 3px solid transparent;
+}
+
+.login-tab:hover {
+  background-color: #c0392b;
+  border-bottom: 3px solid transparent;
+}
+
+/* Main Layout */
 .container {
   max-width: 1000px;
-  margin: 20px auto;
+  margin: 40px auto;
   padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 article {
-  background: #fff;
-  margin-bottom: 20px;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background: var(--white);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 article h2 {
-  color: #2c3e50;
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--bg-color);
+  padding-bottom: 10px;
+  margin-top: 0;
 }
 
+/* Card Grid for "Tipos" */
+.card-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  min-width: 250px;
+  background-color: var(--bg-color);
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid var(--secondary-color);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: var(--secondary-color);
+}
+
+/* Footer */
 footer {
-  background-color: #2c3e50;
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--white);
   text-align: center;
-  padding: 15px;
-  margin-top: 30px;
+  padding: 20px;
+  margin-top: 50px;
 }
-/* 📱 MÓVIL */
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 1.5rem;
-  }
 
-  nav {
+/* LOGIN PAGE STYLES */
+body.login-page {
+  background: linear-gradient(135deg, var(--bg-color) 0%, #e8ecf3 100%);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.login-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.login-box {
+  background: var(--white);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.login-box:hover {
+  transform: translateY(-5px);
+}
+
+.login-header h2 {
+  color: var(--primary-color);
+  margin-bottom: 5px;
+}
+
+.login-header p {
+  color: #7f8c8d;
+  font-size: 0.9em;
+  margin-bottom: 30px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--secondary-color);
+  font-size: 0.9rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #ecf0f1;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+  outline: none;
+}
+
+.input-group input:focus {
+  border-color: var(--accent-color);
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  margin-bottom: 25px;
+}
+
+.form-actions a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.form-actions a:hover {
+  text-decoration: underline;
+}
+
+.btn-login {
+  width: 100%;
+  padding: 14px;
+  background-color: var(--accent-color);
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-login:hover {
+  background-color: #c0392b;
+  transform: scale(1.02);
+}
+
+.login-footer {
+  margin-top: 25px;
+  font-size: 0.9em;
+  color: #7f8c8d;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+.login-footer a {
+  color: var(--primary-color);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Scroll Behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Responsive CSS */
+@media (max-width: 768px) {
+  .nav-container {
     flex-direction: column;
     align-items: center;
   }
 
-  .container {
-    padding: 1rem;
+  .nav-tab {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
-}
 
-/* 📲 TABLET */
-@media (max-width: 900px) {
-  body {
-    font-size: 0.95rem;
-  }
-}
-
-/* 💻 PANTALLAS GRANDES */
-@media (min-width: 1200px) {
-  body {
-    font-size: 1.05rem;
+  .login-tab {
+    margin-left: 0;
+    margin-top: 10px;
+    width: auto;
+    padding: 10px 40px;
+    border-radius: 20px;
   }
 }

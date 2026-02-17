@@ -1,41 +1,57 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Blog Informativo sobre las Drogas</title>
-  <link rel="stylesheet" href=".//css/style.css" />
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
+
 <body>
 
   <header>
-    <h1>Blog Informativo sobre las Drogas</h1>
-    <p>Información, prevención y concienciación</p>
+    <div class="header-content">
+      <h1>Blog Informativo sobre las Drogas</h1>
+      <p>Información, prevención y concienciación</p>
+    </div>
   </header>
 
   <nav>
-    <a href="#que-son">¿Qué son?</a>
-    <a href="#tipos">Tipos</a>
-    <a href="#efectos">Efectos</a>
-    <a href="#prevencion">Prevención</a>
+    <div class="nav-container">
+      <a href="#que-son" class="nav-tab">¿Qué son?</a>
+      <a href="#tipos" class="nav-tab">Tipos</a>
+      <a href="#efectos" class="nav-tab">Efectos</a>
+      <a href="#prevencion" class="nav-tab">Prevención</a>
+      <a href="html/login.html" class="nav-tab login-tab">Login</a>
+    </div>
   </nav>
 
   <div class="container">
     <article id="que-son">
       <h2>¿Qué son las drogas?</h2>
       <p>
-        Las drogas son sustancias que, al introducirse en el organismo, pueden modificar el funcionamiento del sistema nervioso central.
+        Las drogas son sustancias que, al introducirse en el organismo, pueden modificar el funcionamiento del sistema
+        nervioso central.
       </p>
     </article>
 
     <article id="tipos">
       <h2>Tipos de drogas</h2>
-      <ul>
-        <li><strong>Estimulantes:</strong> cafeína, nicotina.</li>
-        <li><strong>Depresoras:</strong> alcohol, tranquilizantes.</li>
-        <li><strong>Alucinógenas:</strong> LSD, hongos.</li>
-      </ul>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Estimulantes</h3>
+          <p>Aceleran el funcionamiento del cerebro (ej. cafeína, nicotina).</p>
+        </div>
+        <div class="card">
+          <h3>Depresoras</h3>
+          <p>Disminuyen la actividad del sistema nervioso (ej. alcohol).</p>
+        </div>
+        <div class="card">
+          <h3>Alucinógenas</h3>
+          <p>Alteran la percepción de la realidad (ej. LSD, hongos).</p>
+        </div>
+      </div>
     </article>
 
     <article id="efectos">
@@ -54,4 +70,5 @@
   </footer>
 
 </body>
+
 </html>
