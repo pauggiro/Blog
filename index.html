@@ -10,63 +10,237 @@
 
 <body>
 
+  <!-- Header / Navigation -->
   <header>
     <div class="header-content">
-      <h1>Blog Informativo sobre las Drogas</h1>
-      <p>Información, prevención y concienciación</p>
+      <div class="logo">Institut<strong>Drogas</strong>.</div>
     </div>
   </header>
 
   <nav>
     <div class="nav-container">
-      <a href="#que-son" class="nav-tab">¿Qué son?</a>
-      <a href="#tipos" class="nav-tab">Tipos</a>
-      <a href="#efectos" class="nav-tab">Efectos</a>
-      <a href="#prevencion" class="nav-tab">Prevención</a>
-      <a href="html/login.html" class="nav-tab login-tab">Login</a>
+      <a href="#hero" class="nav-tab">Inicio</a>
+      <a href="#que-son" class="nav-tab">Información</a>
+      <a href="#comunidad" class="nav-tab">Comunidad</a>
+      <a href="#citas" class="nav-tab">Citas</a>
+      <a href="#faq" class="nav-tab">FAQ</a>
+      <a href="html/login.html" class="nav-tab login-tab">Acceso Profesionales</a>
     </div>
   </nav>
 
-  <div class="container">
-    <article id="que-son">
-      <h2>¿Qué son las drogas?</h2>
-      <p>
-        Las drogas son sustancias que, al introducirse en el organismo, pueden modificar el funcionamiento del sistema
-        nervioso central.
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="animate-up">Conocimiento es Prevención</h1>
+      <p class="animate-up delay-1">Un recurso profesional y autorizado sobre el impacto, prevención y tratamiento de
+        adicciones.</p>
+      <a href="#que-son" class="btn-hero animate-up delay-2">Explorar Recursos</a>
+    </div>
+  </section>
+
+  <!-- Statistics Section -->
+  <section id="stats" class="stats-section">
+    <div class="container stats-grid">
+      <div class="stat-item fade-in-on-scroll">
+        <span class="stat-number">15+</span>
+        <span class="stat-label">Años de Investigación</span>
+      </div>
+      <div class="stat-item fade-in-on-scroll">
+        <span class="stat-number">5k+</span>
+        <span class="stat-label">Profesionales Conectados</span>
+      </div>
+      <div class="stat-item fade-in-on-scroll">
+        <span class="stat-number">98%</span>
+        <span class="stat-label">Tasa de Satisfacción</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="container main-content-layout">
+
+    <!-- Information Section -->
+    <article id="que-son" class="scroll-reveal">
+      <div class="section-header">
+        <h2>Adicciones y Salud Pública</h2>
+        <div class="underline"></div>
+      </div>
+      <p class="intro-text">
+        Las drogas son sustancias que actúan sobre el sistema nervioso central. Su consumo reiterado puede dar lugar a
+        una dependencia, afectando no solo la salud física y mental del individuo, sino también su entorno social y
+        familiar.
       </p>
     </article>
 
-    <article id="tipos">
-      <h2>Tipos de drogas</h2>
+    <article id="tipos" class="scroll-reveal">
+      <div class="section-header">
+        <h2>Clasificación Farmacológica</h2>
+        <div class="underline"></div>
+      </div>
       <div class="card-grid">
         <div class="card">
+          <div class="card-icon">⚡</div>
           <h3>Estimulantes</h3>
-          <p>Aceleran el funcionamiento del cerebro (ej. cafeína, nicotina).</p>
+          <p>Aceleran la actividad cerebral, elevando el estado de alerta y energía (ej. cocaína, anfetaminas,
+            nicotina).</p>
         </div>
         <div class="card">
+          <div class="card-icon">🌙</div>
           <h3>Depresoras</h3>
-          <p>Disminuyen la actividad del sistema nervioso (ej. alcohol).</p>
+          <p>Ralentizan el funcionamiento del sistema nervioso central (ej. alcohol, benzodiacepinas, opioides).</p>
         </div>
         <div class="card">
-          <h3>Alucinógenas</h3>
-          <p>Alteran la percepción de la realidad (ej. LSD, hongos).</p>
+          <div class="card-icon">🌀</div>
+          <h3>Perturbadoras</h3>
+          <p>Alteran la percepción de la realidad, provocando alucinaciones o distorsiones sensoriales (ej. LSD,
+            cannabis).</p>
         </div>
       </div>
     </article>
 
-    <article id="efectos">
-      <h2>Efectos del consumo</h2>
-      <p>El consumo puede causar problemas físicos, mentales y sociales.</p>
+    <!-- Community / Forum Mockup -->
+    <article id="comunidad" class="scroll-reveal">
+      <div class="section-header">
+        <h2>Voces de la Comunidad</h2>
+        <div class="underline"></div>
+      </div>
+      <p class="section-desc">Únete a la discusión en nuestro foro moderado por expertos.</p>
+
+      <div class="forum-mockup">
+        <div class="forum-topic">
+          <div class="avatar" style="background-color: #3498db;">JD</div>
+          <div class="topic-content">
+            <h4>Estrategias de afrontamiento para familiares</h4>
+            <p>Iniciado por <strong>Juan_D</strong> • Hace 2 horas • <span class="reply-count">15 respuestas</span></p>
+          </div>
+          <button class="btn-sm">Ver Tema</button>
+        </div>
+
+        <div class="forum-topic">
+          <div class="avatar" style="background-color: #e74c3c;">MG</div>
+          <div class="topic-content">
+            <h4>¿Cómo detectar el consumo temprano en adolescentes?</h4>
+            <p>Iniciado por <strong>Maria_G</strong> • Hace 5 horas • <span class="reply-count">32 respuestas</span></p>
+          </div>
+          <button class="btn-sm">Ver Tema</button>
+        </div>
+
+        <div class="forum-topic">
+          <div class="avatar" style="background-color: #27ae60;">Dr</div>
+          <div class="topic-content topic-pinned">
+            <h4>[PINNED] Recursos locales y centros de ayuda 2026</h4>
+            <p>Iniciado por <strong>Dr. López</strong> • Hace 1 día • <span class="reply-count">108 respuestas</span>
+            </p>
+          </div>
+          <button class="btn-sm">Ver Tema</button>
+        </div>
+      </div>
     </article>
 
-    <article id="prevencion">
-      <h2>Prevención</h2>
-      <p>La información, la educación y el apoyo son claves para la prevención.</p>
+    <!-- Booking / Appointment Section -->
+    <article id="citas" class="form-section scroll-reveal">
+      <div class="section-header">
+        <h2>Conferencias y Asesoramiento</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="booking-container">
+        <div class="booking-info">
+          <h3>Solicite una Charla</h3>
+          <p>Nuestros especialistas están disponibles para conferencias educativas, asesoramiento institucional y
+            talleres preventivos.</p>
+          <ul class="benefit-list">
+            <li>✓ Expertos certificados</li>
+            <li>✓ Material didáctico incluido</li>
+            <li>✓ Adaptado a todas las edades</li>
+          </ul>
+        </div>
+        <form class="booking-form">
+          <div class="form-group">
+            <label>Nombre Completo</label>
+            <input type="text" placeholder="Su nombre">
+          </div>
+          <div class="form-group">
+            <label>Institución / Organización</label>
+            <input type="text" placeholder="Nombre de la entidad">
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Fecha Preferida</label>
+              <input type="date">
+            </div>
+            <div class="form-group">
+              <label>Tipo de Evento</label>
+              <select>
+                <option>Conferencia Escolar</option>
+                <option>Formación Corporativa</option>
+                <option>Asesoramiento Privado</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="btn-submit">Solicitar Cita</button>
+        </form>
+      </div>
     </article>
+
+    <!-- FAQ Section -->
+    <article id="faq" class="scroll-reveal">
+      <div class="section-header">
+        <h2>Preguntas Frecuentes</h2>
+        <div class="underline"></div>
+      </div>
+
+      <div class="accordion">
+        <details>
+          <summary>¿Qué señales indican un problema de adicción?</summary>
+          <div class="accordion-content">
+            <p>Cambios drásticos en el comportamiento, descuido de responsabilidades, cambios en los patrones de sueño y
+              alimentación, y la necesidad compulsiva de consumir la sustancia.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>¿Cómo puedo ayudar a un familiar?</summary>
+          <div class="accordion-content">
+            <p>Lo más importante es la comunicación abierta y sin juicios. Busque apoyo profesional y evite
+              confrontaciones agresivas. Ofrezca acompañamiento a centros de salud.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>¿Son confidenciales las consultas?</summary>
+          <div class="accordion-content">
+            <p>Absolutamente. Todas las consultas a través de nuestro sistema de citas y los datos compartidos están
+              protegidos bajo estrictos protocolos de confidencialidad médica.</p>
+          </div>
+        </details>
+      </div>
+    </article>
+
   </div>
 
   <footer>
-    <p>&copy; 2026 Blog educativo</p>
+    <div class="footer-content">
+      <div class="footer-col">
+        <h4>InstitutDrogas</h4>
+        <p>Comprometidos con la educación y la salud pública desde 2010.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Enlaces Rápidos</h4>
+        <ul>
+          <li><a href="#hero">Inicio</a></li>
+          <li><a href="#citas">Citas</a></li>
+          <li><a href="html/login.html">Área Profesional</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <p>info@institutdrogas.org</p>
+        <p>+34 900 123 456</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 InstitutDrogas. Todos los derechos reservados.</p>
+    </div>
   </footer>
 
 </body>

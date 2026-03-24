@@ -8,25 +8,27 @@
     <link rel="stylesheet" href="../css/style.css" />
 </head>
 
-<body class="login-page">
 
-    <nav>
-        <div class="nav-container">
-            <a href="../index.html" class="nav-tab">← Volver al Blog</a>
+<div class="split-screen">
+    <div class="left-panel">
+        <div class="panel-content">
+            <h2>Institut<strong>Drogas</strong></h2>
+            <p>"La educación es el arma más poderosa para cambiar el mundo."</p>
+            <a href="../index.html" class="btn-back">← Volver al inicio</a>
         </div>
-    </nav>
+    </div>
 
-    <div class="login-container">
+    <div class="right-panel">
         <div class="login-box">
             <div class="login-header">
-                <h2>Bienvenido de nuevo</h2>
-                <p>Accede a tu cuenta para gestionar el contenido</p>
+                <h3>Acceso Profesional</h3>
+                <p>Bienvenido, por favor ingrese sus credenciales.</p>
             </div>
 
             <form>
                 <div class="input-group">
-                    <label for="username">Usuario</label>
-                    <input type="text" id="username" name="username" placeholder="Introduce tu usuario" required>
+                    <label for="username">Usuario / Email</label>
+                    <input type="text" id="username" name="username" placeholder="ejemplo@institutdrogas.org" required>
                 </div>
 
                 <div class="input-group">
@@ -35,20 +37,22 @@
                 </div>
 
                 <div class="form-actions">
-                    <label class="remember-me">
-                        <input type="checkbox"> Recordarme
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span>Recordarme</span>
                     </label>
-                    <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+                    <a href="#" class="forgot-password">Recuperar contraseña</a>
                 </div>
 
-                <button type="submit" class="btn-login">Entrar</button>
+                <button type="submit" class="btn-login">Iniciar Sesión</button>
             </form>
 
             <div class="login-footer">
-                <p>¿No tienes cuenta? <a href="#">Regístrate aquí</a></p>
+                <p>¿Aún no es miembro? <a href="#">Solicitar acceso</a></p>
             </div>
         </div>
     </div>
+</div>
 
 </body>
 
